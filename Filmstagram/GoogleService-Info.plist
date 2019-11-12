@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>96463632519-lmovf1ugds01rlink2viom7tdh05h0pu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.96463632519-lmovf1ugds01rlink2viom7tdh05h0pu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC6PWLjOH1ysMc9XJ0oF8WyRiIIRA9HQMc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>96463632519</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Semih.Filmstagram</string>
+	<key>PROJECT_ID</key>
+	<string>fir-de160</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-de160.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:96463632519:ios:3cd582b81cbf1aece76022</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-de160.firebaseio.com</string>
+</dict>
+</plist>
