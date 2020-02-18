@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VgC-qL-RHX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VgC-qL-RHX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,13 +91,13 @@
                                     <action selector="SearchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0In-WS-FxR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pE-Dx-dUi">
-                                <rect key="frame" x="20" y="183" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pE-Dx-dUi">
+                                <rect key="frame" x="20" y="183" width="79" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="SHm-pR-hdE"/>
+                                    <constraint firstAttribute="width" constant="79" id="SHm-pR-hdE"/>
                                     <constraint firstAttribute="height" constant="30" id="YZW-KF-HbC"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Like" image="film" catalog="system"/>
                                 <connections>
                                     <segue destination="0hA-mG-qN2" kind="show" identifier="ToLikeSegue" id="ZAd-lq-ojh"/>
                                 </connections>
@@ -118,7 +118,7 @@
                             <constraint firstItem="7pE-Dx-dUi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XfO-bX-Fex"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Brb-1N-qKJ" secondAttribute="bottom" id="bAK-3f-UH2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nVZ-i7-hvH" secondAttribute="trailing" constant="20" id="jOT-ib-zIy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7pE-Dx-dUi" secondAttribute="trailing" constant="348" id="pxj-Sw-dgV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7pE-Dx-dUi" secondAttribute="trailing" constant="315" id="pxj-Sw-dgV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Brb-1N-qKJ" secondAttribute="trailing" id="sbM-OA-MJf"/>
                             <constraint firstItem="7pE-Dx-dUi" firstAttribute="top" secondItem="ewb-FN-B3H" secondAttribute="bottom" constant="8" id="w6Y-zP-gKa"/>
                         </constraints>
@@ -351,6 +351,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="film" catalog="system" width="64" height="46"/>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
