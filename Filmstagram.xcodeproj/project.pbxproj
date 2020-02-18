@@ -289,7 +289,6 @@
 				AE1B4D9D23698D2900599B37 /* Sources */,
 				AE1B4D9E23698D2900599B37 /* Frameworks */,
 				AE1B4D9F23698D2900599B37 /* Resources */,
-				365ABA6513D4FE7912FE7F72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,7 +326,6 @@
 				AE1B4DBE23698D2A00599B37 /* Sources */,
 				AE1B4DBF23698D2A00599B37 /* Frameworks */,
 				AE1B4DC023698D2A00599B37 /* Resources */,
-				BEC24E36549265FF95567432 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,23 +409,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		365ABA6513D4FE7912FE7F72 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Filmstagram/Pods-Filmstagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Filmstagram/Pods-Filmstagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Filmstagram/Pods-Filmstagram-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3C96CD77971C1AD2E1665B1B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,23 +451,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BEC24E36549265FF95567432 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Filmstagram-FilmstagramUITests/Pods-Filmstagram-FilmstagramUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Filmstagram-FilmstagramUITests/Pods-Filmstagram-FilmstagramUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Filmstagram-FilmstagramUITests/Pods-Filmstagram-FilmstagramUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB826C962DF341B4A53CA6CE /* [CP] Check Pods Manifest.lock */ = {

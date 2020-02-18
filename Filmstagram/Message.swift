@@ -11,9 +11,8 @@ import UIKit
 
 class Message {
     static func show(messageTitle:String) -> Void {
-    let alert = UIAlertController(title: "Error", message:messageTitle , preferredStyle: UIAlertController.Style.alert)
+    let alert = UIAlertController(title: "OK", message:messageTitle , preferredStyle: UIAlertController.Style.alert)
     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
     UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
     }
 }
-

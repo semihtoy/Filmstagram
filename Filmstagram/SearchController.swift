@@ -3,6 +3,7 @@
 //  Created by Xcode on 30.10.2019.
 //  Copyright © 2019 Xcode. All rights reserved.
 import UIKit
+
 class SearchController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var films = [Search]();
     var selectedFilm : Search?;
@@ -24,8 +25,9 @@ class SearchController: UIViewController, UITableViewDelegate, UITableViewDataSo
                 let data = try? Data(contentsOf: imageURL)
                 if let data = data {
                     let image = UIImage(data: data)
-                    DispatchQueue.main.async {                             
+                    DispatchQueue.main.async {
                         cell.SearchFilmPoster.image = image
+                        
                     }
                 }
             }
@@ -48,13 +50,13 @@ class SearchController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     func printAction(at indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .destructive, title: "print") {  (action, view, completion) in
-         self._SqlHelper.insert(_search: self.films[indexPath.row])
+            self._SqlHelper.insert(_search: self.films[indexPath.row])
             let alert = UIAlertController(title: "Alert", message: self.films[indexPath.row].title!+" Eklendi", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil));
             self.present(alert, animated: true, completion: nil)
             completion(true)
         }
-        action.title =	"Ekle";
+        action.title =    "Ekle";
         action.backgroundColor = random()
         return action
     }
@@ -69,27 +71,17 @@ class SearchController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     @IBAction func SearchButton(_ sender: Any) {
         self._searchService.search(param: ["s": self.SearchTextField.text!, "type":  "movie"]){ (data) in
-            print(data);
             self.films = data;
             DispatchQueue.main.async {
                 self.SearchTableView.reloadData();
                 self.hideKeyboard();
             };
         }
-        UserDefaults.standard.set(SearchTextField.text, forKey: "LastSearchTitle")
+
     }
-   
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self._searchService.search(param: ["s": UserDefaults.standard.string(forKey: "LastSearchTitle")!, "type":  "movie"]){ (data) in
-            print(data);
-            self.films = data;
-            DispatchQueue.main.async {
-                self.SearchTableView.reloadData();
-                self.SearchTextField.text = UserDefaults.standard.string(forKey: "LastSearchTitle")
-            };
-        }
+        super.viewDidLoad();
         SearchTableView.dataSource = self
         SearchTableView.delegate = self
         loginButton.layer.borderWidth = 1
